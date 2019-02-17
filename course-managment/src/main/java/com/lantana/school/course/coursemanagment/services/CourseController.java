@@ -2,7 +2,6 @@ package com.lantana.school.course.coursemanagment.services;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.keycloak.KeycloakPrincipal;
 import org.keycloak.KeycloakSecurityContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -35,9 +34,9 @@ public class CourseController {
 		System.out.println("calling get course method " + courseCode);
 		Course course = couseService.getCourse(courseCode);
 		System.out.println("Couse featched from repo " + course.name);
-		System.out.println("Permissions "+((Identity)model.asMap().get("identity")).getPermissions());
-		KeycloakPrincipal principal = (KeycloakPrincipal)request.getUserPrincipal();
-		System.out.println(principal.getKeycloakSecurityContext().getTokenString());
+//		System.out.println("Permissions "+((Identity)model.asMap().get("identity")).getPermissions());
+//		KeycloakPrincipal principal = (KeycloakPrincipal)request.getUserPrincipal();
+//		System.out.println(principal.getKeycloakSecurityContext().getTokenString());
 		return course;
 	}
 
