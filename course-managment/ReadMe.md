@@ -24,22 +24,21 @@ course-management
 
 1. Alan Turing  
 
-    role : teacher
+    role : teacher  
     username : alen.tuning
 
 2. Ronald Rivest
 
 3. Peter Jackson
 
-   role: ta
-   useraname : peter.jackson
-   assword : test123
-
+   role: ta  
+   useraname : peter.jackson  
+  
 4. john mayer
 
 5. rose white
   
-   role : student
+   role : student  
    username : rose.white
 
 6. anne wheeler
