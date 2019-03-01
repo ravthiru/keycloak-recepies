@@ -52,9 +52,12 @@ course-management
 	
 	sh login.sh alen.tuning  
 	
-	Call the url to get the course  
+	Get the course details  
 	
-	curl -v  http://localhost:8090/courses/1001
+	curl -i  http://localhost:8090/courses/1001  
 	
+	Delete Course   
+	
+	curl -i -X DELETE http://localhost:8090/courses/1001  
 	
     
