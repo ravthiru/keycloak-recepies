@@ -50,7 +50,11 @@ course-management
 	the .curlrc file so that you can use curl to access services which require a     
 	bearer authorisation token.
 	
-	sh login.sh alen.tuning  
+	start application
+	
+	# mvn spring-boot:run
+	
+	./login.sh alen.tuning  
 	
 	Get the course details  
 	
@@ -60,4 +64,8 @@ course-management
 	
 	curl -i -X DELETE http://localhost:8090/courses/1001  
 	
+
+### Debug
+  # mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"   
+ 
     

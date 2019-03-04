@@ -77,6 +77,7 @@ public class CourseController {
 	
 	@DeleteMapping("/courses/{id}")
 	public void deleteStudent(@PathVariable long id) {
+		System.out.println("calling delete operation");
 		couseService.deleteById(id);
 	}
 	
