@@ -44,7 +44,7 @@ course-management
 
      anne wheeler
 
-### Test
+### How to run the application
 	
 	Login scripts authenticates user using username and password and sets up    
 	the .curlrc file so that you can use curl to access services which require a     
@@ -54,7 +54,11 @@ course-management
 	
 	# mvn spring-boot:run
 	
+	
+	login with user
+	
 	./login.sh alen.tuning  
+	
 	
 	Get the course details  
 	
