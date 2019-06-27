@@ -9,12 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -42,9 +41,9 @@ public class CourseController {
 		System.out.println("calling get course method " + id);
 		Course course = couseService.getCourse(id);
 		System.out.println("Couse featched from repo " + course.name);
-//		System.out.println("Permissions "+((Identity)model.asMap().get("identity")).getPermissions());
-//		KeycloakPrincipal principal = (KeycloakPrincipal)request.getUserPrincipal();
-//		System.out.println(principal.getKeycloakSecurityContext().getTokenString());
+		//System.out.println("Permissions "+((Identity)model.asMap().get("identity")).getPermissions());
+		//KeycloakPrincipal principal = (KeycloakPrincipal)request.getUserPrincipal();
+		//System.out.println(principal.getKeycloakSecurityContext().getTokenString());
 		return course;
 	}
 	
