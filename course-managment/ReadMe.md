@@ -54,14 +54,15 @@ course-management
 	
 	Get the course details  
 	
-	curl -i  http://localhost:8090/courses/1001  
+	 http://localhost:8090/courses/1001  
 	
 	Delete Course   
 	
-	curl -i -X DELETE http://localhost:8090/courses/1001  
+	 DELETE http://localhost:8090/courses/1001  
 	
 
 ### Debug
-    #mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"   
+    #mvn spring-boot:run -Dspring-boot.run.jvmArguments=
+    "-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"   
  
     
