@@ -23,31 +23,25 @@ import com.lantana.school.course.coursemanagment.security.Identity;
 @RestController
 public class CourseController {
 
-    @Autowired
-    private HttpServletRequest request;
-	
+	@Autowired
+	private HttpServletRequest request;
+
 	@Autowired
 	private CourseService couseService;
-
-//	@GetMapping(value = "/course", produces = MediaType.APPLICATION_JSON_VALUE)
-//	public String hello() {
-//		System.out.println("calling course method");
-//		return "Greetings from Spring Boot!";
-//	}
 
 	@GetMapping(value = "/courses/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public Course getCourse(@PathVariable("id") long id, Model model) throws JsonProcessingException {
 		configCommonAttributes(model);
-		System.out.println("calling get course method " + id);
 		Course course = couseService.getCourse(id);
-		System.out.println("Couse featched from repo " + course.name);
-		//System.out.println("Permissions "+((Identity)model.asMap().get("identity")).getPermissions());
-		//KeycloakPrincipal principal = (KeycloakPrincipal)request.getUserPrincipal();
-		//System.out.println(principal.getKeycloakSecurityContext().getTokenString());
 		return course;
 	}
 	
-	
+	@DeleteMapping("/courses/{id}")
+	public void deleteStudent(@PathVariable long id) {
+		System.out.println("calling delete operation");
+		couseService.deleteById(id);
+	}
+
 	@PostMapping("/courses")
 	public ResponseEntity<Course> createCourse(@RequestBody Course course) {
 		Course savedCourse = couseService.addCourse(course);
@@ -58,41 +52,12 @@ public class CourseController {
 		return ResponseEntity.created(location).build();
 
 	}
-	
-//	@PutMapping("/students/{id}")
-//	public ResponseEntity<Object> updateStudent(@PathVariable long id, @RequestBody Student student) {
-//
-//		Optional<Student> studentOptional = studentRepository.findById(id);
-//
-//		if (!studentOptional.isPresent())
-//			return ResponseEntity.notFound().build();
-//
-//		student.setId(id);
-//		
-//		studentRepository.save(student);
-//
-//		return ResponseEntity.noContent().build();
-//	}
-	
-	@DeleteMapping("/courses/{id}")
-	public void deleteStudent(@PathVariable long id) {
-		System.out.println("calling delete operation");
-		couseService.deleteById(id);
-	}
-	
-	
-//	public Course updateCouse(@PathVariable("id") long id, Course updateCourse, Model model) {
-//		
-//		configCommonAttributes(model);
-//		System.out.println("calling update course " + updateCourse.getCode());
-//		Course course = couseService.getCourse(updateCourse.getCode());
-//		return course;
-//	}
-	
+
+
 
 	private void configCommonAttributes(Model model) {
 		model.addAttribute("identity", new Identity(getKeycloakSecurityContext()));
-		
+
 	}
 
 	private KeycloakSecurityContext getKeycloakSecurityContext() {

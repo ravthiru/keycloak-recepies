@@ -22,7 +22,6 @@ public class Identity {
      * @return true if user has was granted with a permission for the given resource. Otherwise, false.
      */
     public boolean hasResourcePermission(String name) { 
-    	System.out.println("hasResourcePermission : "+name);
         return getAuthorizationContext().hasResourcePermission(name);
     }
 
@@ -32,7 +31,6 @@ public class Identity {
      * @return the user name
      */
     public String getName() {
-    	System.out.println(" getName" +securityContext.getIdToken().getPreferredUsername());
         return securityContext.getIdToken().getPreferredUsername();
     }
 
@@ -42,7 +40,6 @@ public class Identity {
      * @return
      */
     public List<Permission> getPermissions() {
-    	 System.out.println("getPermissions "+ getAuthorizationContext().getPermissions());
         return getAuthorizationContext().getPermissions();
     }
 
