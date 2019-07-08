@@ -34,30 +34,22 @@ course-management
     role : teacher  
     username : alen.tuning
 
-
-    role: ta  
-    useraname : peter.jackson  
-  
- 
     role : student  
     username : rose.white
 
-     anne wheeler
 
 ### How to run the application
-	
-	Login scripts authenticates user using username and password and sets up    
-	the .curlrc file so that you can use curl to access services which require a     
-	bearer authorisation token.
+
 	
 	start application
 	
 	# mvn spring-boot:run
 	
 	
-	login with user
+	Get Access Token before requesting Course REST API, 
+	You can use Postman for getting access token  from following url
 	
-	./login.sh alen.tuning  
+	 http://localhost:8080/auth/realms/university/protocol/openid-connect/token
 	
 	
 	Get the course details  
