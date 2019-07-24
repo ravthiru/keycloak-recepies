@@ -1,7 +1,8 @@
 
-Couse Management SpringBoot Application providing REST API , showcasing integration with Keycloak.  
+Couse Management SpringBoot Application providing REST API , showcasing integration with Keycloak.  And helps to understand autherization feature of Keycloak.  
 
-Helps to understand autherization feature of Keycloak.  
+Here is the link of the article explaining how to configure Keycloak and Test 
+https://medium.com/@ravthiru/rest-service-protected-using-keycloak-authorization-services-a6ad2d8ecb9f
 
 ### Realm : 
 university
