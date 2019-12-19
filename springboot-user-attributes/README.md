@@ -5,10 +5,10 @@ What is it?
 -----------
 
 The `springboot-user-attributes` demonstrates how to set custom attributes for a user
-and retrieve them from AccessToken of an Authenticated User
-we write a RESTful service with SpringBoot that is secured with <span>Keycloak</span>.
+and retrieve them from AccessToken. We write a RESTful service with SpringBoot 
+that is secured with <span>Keycloak</span>.
 
-There are 2 endpoints exposed by the service:
+There are 2 endpoints exposed by this service:
 
 * `public` - requires no authentication
 * `userinfo` - can be invoked by users with the `user` role and returns a list of products
@@ -17,26 +17,29 @@ There are 2 endpoints exposed by the service:
 System Requirements
 -------------------
 
-All you need to build this project is Java 11 (Java SDK 1.11) or later and Maven 3.3.8 or later.
-Keycloak Server version 8.0.1
+All you need to build this project is 
+
+* Java 11 (Java SDK 1.11) or later 
+*  Maven 3.3.8 or later.
+*  Keycloak Server version 8.0.1
 
 Configuration in <span>Keycloak</span>
 --------------------------------------
 
 Prior to running this application you need to configure keycloak
 
-a) Create realm `springboot-keycloak`
-b) Create client `springboot-user-attributes` under realm `springboot-keycloak` and set `Access Type` as `bearer-only`
-c) Create realm level role 'user'
-e) Create user `bob` and assign role 'user'
-f) Set Attribute for the user `bob` , set key as `mobile` and value as `555-555-5555`
+*  Create realm `springboot-keycloak`
+*  Create client `springboot-user-attributes` under realm `springboot-keycloak` and set `Access Type` as `bearer-only`
+*  Create realm level role 'user'
+*  Create user `bob` and assign role 'user'
+*  Set Attribute for the user `bob` , set key as `mobile` and value as `555-555-5555`
 
  Setup `public` client to test custom user attributes
 
  Note : Protocol mappers are available only for public or Confidential clients
 
- a) Create client `postman` under realm `springboot-keycloak` and set `Access Type` as `public`
- b) for `postman` client create a mapper for 'mobile' user attribute and enable `Add to access token`
+ *  Create client `postman` under realm `springboot-keycloak` and set `Access Type` as `public`
+ *  Create a mapper for client `postman`, map 'mobile' user attribute and enable `Add to access token`
 
 
 Build and Run the springboot-user-attributes
