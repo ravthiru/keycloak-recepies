@@ -64,4 +64,5 @@ Build and Run the springboot-user-attributes
 
  a) Get AccessToken using below url for user `bob`
     http://localhost:8080/auth/realms/springboot-keycloak/protocol/openid-connect/token
+    
  b) Use the above AccessToken to request  'GET http://localhost:8081/userinfo', now you can see the custom user attribute in response
