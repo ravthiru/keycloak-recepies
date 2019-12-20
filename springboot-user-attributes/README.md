@@ -11,7 +11,7 @@ that is secured with <span>Keycloak</span>.
 There are 2 endpoints exposed by this service:
 
 * `public` - requires no authentication
-* `userinfo` - can be invoked by users with the `user` role and returns a list of products
+* `userinfo` - can be invoked by users with the `user` role and returns login user attributes 
 
 
 System Requirements
