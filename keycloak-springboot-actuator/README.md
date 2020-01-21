@@ -14,7 +14,7 @@ To demonstrate tracing, a RESTful SpringBoot application is created and it is se
 Endpoint exposed by this application
 
 * `employee/{ID}` - To retrieve employee details and requires authentication
-* `actuator/httptrace` - To retrieve in-memory traces collected by the actuator service 
+* `actuator/httptrace` - To retrieve in-memory traces collected by the spring boot actuator 
 
 
 System Requirements
