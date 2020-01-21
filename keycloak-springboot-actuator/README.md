@@ -1,5 +1,5 @@
-keycloak-springboot-actuator : SpringBoot REST Service
-=======================================================
+keycloak-springboot-actuator : Monitoring keycloak protected application using SpringBoot Actuator
+==================================================================================================
 
 What is it?
 -----------
