@@ -5,11 +5,11 @@ What is it?
 -----------
 
 The `keycloak-springboot-actuator` demonstrates how to extend Spring Boot Actuator 
-to trace REST calls to your applications with is protected by Keycloak. 
-Here is we are extending httptrace endpoint to capture Request body, Response body and Login User.
+to trace all REST calls to an application which is protected by Keycloak. 
+Here we are extending httptrace endpoint to capture Request body, Response body 
+and Login User.
 
-To demonstrate tracing, We write a RESTful service with SpringBoot 
-that is secured with <span>Keycloak</span>.
+To demonstrate tracing, a RESTful SpringBoot application is created and it is secured with <span>Keycloak</span>.
 
 Endpoint exposed by this application
 
