@@ -1,6 +1,8 @@
 springboot-user-attributes: SpringBoot REST Service
 ====================================================
 
+Find detailed info on medium https://link.medium.com/qNRw8vFuP3
+
 What is it?
 -----------
 
