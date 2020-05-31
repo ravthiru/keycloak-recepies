@@ -6,15 +6,15 @@
 
 	<groupId>com.lantana.school.course</groupId>
 	<artifactId>course-managment</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>course-managment</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.11</java.version>
-		<springboot-version>2.1.5.RELEASE</springboot-version>
-		<keycloak-version>6.0.1</keycloak-version>
+		<springboot-version>2.3.0.RELEASE</springboot-version>
+		<keycloak-version>10.0.1</keycloak-version>
 	</properties>
 
 	<dependencies>
@@ -93,6 +93,14 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>${springboot-version}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<release>11</release>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
