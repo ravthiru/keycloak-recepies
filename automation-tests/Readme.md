@@ -4,6 +4,16 @@
 
 This project is to demonstrate writing automation test cases for keycloak protected APIs
 
+System Requirements
+-------------------
+
+All you need to build and execute is 
+
+*  Docker
+*  Java 11 (Java SDK 1.11) or later 
+*  Maven 3.3.8 or later
+
+
 ## How to stepup and run the automation test cases
 
 ### Step 1: Start Keycloak and Configure
@@ -36,6 +46,8 @@ This project is to demonstrate writing automation test cases for keycloak protec
 
  **More detailed explaination can be found on Medium article**
  https://medium.com/@ravthiru/automated-testing-of-oauth2-openid-protected-api-605f8a70351f
+ 
+ * Note : * If you are facing any permission issues, provide appropriate permssions to run the scripts.
  
  
  
