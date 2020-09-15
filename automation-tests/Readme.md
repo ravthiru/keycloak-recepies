@@ -18,7 +18,7 @@ All you need to build and execute is
 
 ### Step 1: Start Keycloak and Configure
  
- Go to Directory keycloak and then execute ```run-docker.sh```, it will start the Keycloak and Configure the Keycloak with needed Clients and Users
+ Go to keycalok directory and then execute ```run-docker.sh```, it will start the Keycloak and Configure the Keycloak with needed Clients and Users
     
 ### Step 2: Start the app    
 	
