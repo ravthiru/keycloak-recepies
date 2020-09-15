@@ -47,7 +47,7 @@ All you need to build and execute is
  **More detailed explaination can be found on Medium article**
  https://medium.com/@ravthiru/automated-testing-of-oauth2-openid-protected-api-605f8a70351f
  
- * Note : * If you are facing any permission issues, provide appropriate permssions to run the scripts.
+ Note :  If you are facing any permission issues, provide appropriate permssions to run the scripts.
  
  
  
