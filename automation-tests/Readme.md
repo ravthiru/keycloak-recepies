@@ -14,7 +14,7 @@ All you need to build and execute is
 *  Maven 3.3.8 or later
 
 
-## How to stepup and run the automation test cases
+## How to setup and run the automation test cases
 
 ### Step 1: Start Keycloak and Configure
  
