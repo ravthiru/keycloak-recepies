@@ -30,8 +30,8 @@ All you need to build and execute is
   
 ### Step 3.1:  Create Newman Docker image  
   
-  Before Executng the Automation testcase create newman image with ```newman-reporter-htmlextra``` library
-  You run the ```build-image.sh``` script present in  /test-framework/build. this will create name ```newman-docker/newman-htmlextra```
+  Before executng the automation testcase, create newman image with ```newman-reporter-htmlextra``` library
+  You can run  the ```build-image.sh``` script present in  /test-framework/build. This will create newman image with name ```newman-docker/newman-htmlextra```
 
 ### Step 3.2: Run the Automation Tests
    
