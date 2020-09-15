@@ -25,7 +25,4 @@ docker run --rm -itd -p 8080:8080 \
 
 docker  exec -it  --user 1000 keycloak  /usr/bin/sh -c  /opt/jboss/config/keycloak-init.sh
 
-# docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.io/keycloak/keycloak:11.0.2
 
-#docker run -itd --name=myContainer myImage /bin/bash
-#docker exec -it myContainer /bin/bash -c /init.sh
