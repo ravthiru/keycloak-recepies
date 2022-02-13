@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    org.springframework.boot.autoconfigure: INFO
+    org.springframework.web.client.RestTemplate: DEBUG
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri : http://localhost:8080/realms/springboot
