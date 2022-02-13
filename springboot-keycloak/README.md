@@ -19,8 +19,8 @@ All you need to build this project is
 *  Gradle
 *  Keycloak Server version 16+
 
-Build and Run the springboot-user-attributes
---------------------------------------------
+Build and Run the springboot-keycloak
+-------------------------------------
 
 1. Open a terminal and navigate to the root directory of this springboot-Keycloak.
 
