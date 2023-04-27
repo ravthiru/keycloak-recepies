@@ -13,7 +13,7 @@ System Requirements
 
 All you need to build this project is
 
-* Java 11 (Java SDK 1.17) or later
+* Java 17 (Java SDK 1.17) or later
 *  Gradle
 *  Keycloak Server version 20+
 
