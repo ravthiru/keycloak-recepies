@@ -1,0 +1,49 @@
+{
+    "id": "test-realm",
+    "realm": "test-realm",
+    "sslRequired": "none",
+    "enabled": true,
+    "eventsEnabled": true,
+    "eventsExpiration": 900,
+    "adminEventsEnabled": true,
+    "adminEventsDetailsEnabled": true,
+    "attributes": {
+      "adminEventsExpiration": "900"
+    },
+    "clients": [
+      {
+        "id": "grafana",
+        "clientId": "grafana",
+        "name": "grafana",
+        "enabled": true,
+        "publicClient": true,
+        "rootUrl": "http://localhost",
+        "adminUrl": "http://localhost/admin",
+        "baseUrl": "http://localhost/base",
+        "redirectUris": [
+          "http://localhost/*"
+        ],
+        "webOrigins": [
+          "+"
+        ]
+      }
+    ],
+    "users": [
+      {
+        "id": "admin",
+        "email": "testuser@admin",
+        "username": "testuser",
+        "firstName": "DevOps",
+        "lastName": "SRE",
+        "enabled": true,
+        "emailVerified": true,
+        "credentials": [
+          {
+            "temporary": false,
+            "type": "password",
+            "value": "password"
+          }
+        ]
+      }
+    ]
+  }
